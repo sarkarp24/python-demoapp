@@ -1,0 +1,3 @@
+FROM ubuntu:noble
+RUN apt update
+RUN install make -y

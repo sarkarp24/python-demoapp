@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Docker make image build'){
+            steps{
+                sh 'docker build -f build/Dockerfile-nightly -t my-make-docker .'
+            }
+        }
+    }
+}

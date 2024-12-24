@@ -1,3 +1,4 @@
 FROM ubuntu:noble
 RUN apt update
 RUN apt install -y git make
+RUN apt install -y docker.io
